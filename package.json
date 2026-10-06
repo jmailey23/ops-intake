@@ -1,0 +1,22 @@
+{
+  "name": "ops-intake",
+  "version": "0.1.0",
+  "description": "Turns a contractor's email into filed, assigned work. Rules where mistakes are expensive, Claude where judgment is cheap to check.",
+  "scripts": {
+    "test": "tsx --test test/*.test.ts",
+    "demo": "tsx demo/run.ts",
+    "typecheck": "tsc"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
