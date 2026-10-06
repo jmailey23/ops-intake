@@ -33,7 +33,7 @@ flowchart LR
   F -- two jobs --> P[Waits for a person]
   F -- none --> G[Team list]
   S -. single note .-> X[Claude: is it a meeting?]
-  X -. confidence >= 0.8 .-> MT[Meeting]
+  X -. confident .-> MT[Meeting]
   C -. image attached .-> R[Claude: read the photo]
   R -.-> RA[Facts held for approval]
 ```
