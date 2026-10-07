@@ -48,6 +48,8 @@ The private system this comes from has run since the end of July 2026 for a remo
 - 16 items stopped at the owner instead of being acted on
 - Supabase Postgres, 16 Deno edge functions, 72 row level security policies across eight roles
 
+The pipeline is also how new features arrive. On October 2 the office manager lost an afternoon to a change agreed on site with nothing written down. By October 5 the owner could record the walkthrough on his phone; Deepgram transcribes it, Claude writes the recap onto the job, and the team sends it to the homeowner so both sides hold the same record. Same shape as everything above: the model does the reading, a person decides what goes out.
+
 ## Run it
 
 ```bash
