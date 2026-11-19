@@ -40,13 +40,13 @@ flowchart LR
 
 ## In production
 
-The private system this comes from has run since the end of July 2026 for a remodeling company in Dallas. As of October 5, 2026:
+The private system this comes from has run since the end of July 2026 for a remodeling company in Dallas. Mail arrives straight from the company's Google Workspace inbox, and the job list comes from CompanyCam, where the crew already works. As of November 18, 2026:
 
-- 686 inbound messages through the pipeline (653 email, 33 from the JobTread project management API)
-- 132 action items extracted, 78 percent closed
-- 74 of the 76 job related items filed to the right job with no human sorting (97 percent); the other 2 were filed by a person
-- 16 items stopped at the owner instead of being acted on
-- Supabase Postgres, 16 Deno edge functions, 72 row level security policies across eight roles
+- 1,435 inbound messages through the pipeline: 1,387 emails since September 3, plus 47 project updates from the summer, when jobs still lived in JobTread
+- 195 CompanyCam projects synced; each new project becomes a job within seconds of a webhook, pinned on the map
+- Supabase Postgres, Deno edge functions, row level security across eight roles, from owner to subcontractor
+
+At the October 5 audit, 74 of the 76 job related items had filed themselves to the right job with no human sorting (97 percent), the other 2 were filed by a person, and 16 items had stopped at the owner instead of being acted on.
 
 The pipeline is also how new features arrive. On October 2 the office manager lost an afternoon to a change agreed on site with nothing written down. By October 5 the owner could record the walkthrough on his phone; Deepgram transcribes it, Claude writes the recap onto the job, and the team sends it to the homeowner so both sides hold the same record. Same shape as everything above: the model does the reading, a person decides what goes out.
 
