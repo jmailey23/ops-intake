@@ -40,10 +40,10 @@ flowchart LR
 
 ## In production
 
-The private system this comes from has run since the end of July 2026 for a remodeling company in Dallas. Mail arrives straight from the company's Google Workspace inbox, and the job list comes from CompanyCam, where the crew already works. As of November 18, 2026:
+The private system this comes from has run since the end of July 2026 for a remodeling company in Dallas. Mail arrives straight from the company's Google Workspace inbox, and the job list comes from CompanyCam, where the crew already works. As of November 24, 2026:
 
-- 1,435 inbound messages through the pipeline: 1,387 emails since September 3, plus 47 project updates from the summer, when jobs still lived in JobTread
-- 195 CompanyCam projects synced; each new project becomes a job within seconds of a webhook, pinned on the map
+- 1,504 inbound messages through the pipeline: 1,453 emails, plus project updates from the summer, when jobs still lived in JobTread, and text notes
+- 198 CompanyCam projects synced; each new project becomes a job within seconds of a webhook, pinned on the map
 - Supabase Postgres, Deno edge functions, row level security across eight roles, from owner to subcontractor
 
 At the October 5 audit, 74 of the 76 job related items had filed themselves to the right job with no human sorting (97 percent), the other 2 were filed by a person, and 16 items had stopped at the owner instead of being acted on.
